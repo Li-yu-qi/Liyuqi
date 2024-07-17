@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learner</title>
+    <style>
+        html,body {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f2f2f2;
+        }
+        textarea{
+            width: 95%;
+            height: 40px;
+            resize: none;
+            padding: 5px;
+            margin-bottom: 50px;
+            left: 10px;
+            bottom: 0px;
+            position: adsolute;
+            border-radius: 10px;
+            border-color: #87B2F6;
+            border-width: 3px;
+        }
+        #output-text{
+            height: 70%;
+            margin-top: 20px;
+            text-align: left;
+            overflow-y: auto;
+        }
+        dt{
+            font-weight: bold;
+            padding: 10px;
+        }
+        .container {
+            width:80%;
+            height: 95%;
+            margin: 0 auto;
+            text-align: center; 
+            background-color: #ffffff;
+            position: relative;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            bottom: 0px;
+        }
+        img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Learner</h1>
+      <div id="output-text">
+        <dl id="thelist">
+        </dl>
+      </div>
+    <textarea id="input-text" placeholder="输入您的问题..."></textarea>
+    <button id="submit-button">发送</button>
+    </div>
+
+    
+    <script>
+           document.getElementById('submit-button').addEventListener('click', function() {
+    let inputText = document.getElementById('input-text').value;
+    console.log('你好');
+    });
+    </script>
+</body>
+</html>
