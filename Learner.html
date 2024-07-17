@@ -62,16 +62,23 @@
         <dl id="thelist">
         </dl>
       </div>
-    <textarea id="input-text" placeholder="输入您的问题..."></textarea>
+    <textarea id="input-text" placeholder="输入您的问题（输入“你好”试试）..."></textarea>
     <button id="submit-button">发送</button>
     </div>
 
     
     <script>
-           document.getElementById('submit-button').addEventListener('click', function() {
-    let inputText = document.getElementById('input-text').value;
-    console.log('你好');
-    });
+      document.getElementById('submit-button').addEventListener('click', function() {
+            const inputText = document.getElementById('input-text').value;
+            const outputText = document.getElementById('thelist');
+            const newItem = document.createElement('dt');
+            if (inputText === '你好') {
+                newItem.textContent = '你好';
+            } else {
+                newItem.textContent = '看不懂';
+            }
+            outputText.appendChild(newItem);
+        });
     </script>
 </body>
 </html>
