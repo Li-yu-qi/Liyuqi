@@ -6,8 +6,8 @@
     <title>Learner</title>
     <style>
         html,body {
-            font-family: Arial, sans-serif;
             height: 100%;
+            font-family: Arial, sans-serif;
             background-color: #f2f2f2;
         }
         textarea{
@@ -76,7 +76,7 @@
           completelist.innerHTML += "<dd>" + desc +"</dd>";
         }
         else{
-          completelist.innerHTML += "<dt>" + "<img src='ChatGPT.png' width='40' height='40'>" + "</dt>";
+          completelist.innerHTML += "<dt>" + "<img src='chatgpt.png' width='40' height='40'>" + "</dt>";
           completelist.innerHTML += "<dd>" + desc +"</dd>";
         }
       }
@@ -112,7 +112,7 @@
             message: [
               {
                 "role": "system",
-                "content": "You are a helpful assistant."
+                "content": "You are a helpful assistant that doea OCR and image recognition."
               },
               {
                 "role": "user",
